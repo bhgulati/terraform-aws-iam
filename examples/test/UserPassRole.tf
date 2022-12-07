@@ -1,6 +1,6 @@
-resource "aws_iam_user_policy" "lb_ro" {
+resource "aws_iam_user_policy" "lv_ro" {
   name = "test"
-  user = aws_iam_user.lb.name
+  user = aws_iam_user.lv.name
 
   # Terraform's "jsonencode" function converts a
   # Terraform expression result to valid JSON syntax.
@@ -18,11 +18,11 @@ resource "aws_iam_user_policy" "lb_ro" {
   })
 }
 
-resource "aws_iam_user" "lb" {
+resource "aws_iam_user" "lv" {
   name = "loadbalancer"
   path = "/system/"
 }
 
-resource "aws_iam_access_key" "lb" {
-  user = aws_iam_user.lb.name
+resource "aws_iam_access_key" "lv" {
+  user = aws_iam_user.lv.name
 }
