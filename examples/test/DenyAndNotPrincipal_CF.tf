@@ -9,7 +9,7 @@ Resources:
           - Effect: Deny
             NotPrincipal:
               Service:
-                - ec2.amazonaws.com
+                - ec2.amazonaws
             Action:
               - 'sts:AssumeRole'
       Path: /
