@@ -13,7 +13,7 @@ resource "aws_iam_policy" "privilegeEscalation_policy" {
           "sts:AssumeRole",
         ]
         Effect   = "Allow"
-        Resource = "aws:iam/role"
+        Resource = "aws:/iam/role"
       },
     ]
   })
