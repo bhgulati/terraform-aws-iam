@@ -11,7 +11,7 @@ resource "aws_iam_role" "test_role" {
         Effect = "Allow"
         Sid    = ""
         Principal = {
-          AWS = "arn:aws:iam::112233445566:root"
+          AWS = "arn:aws:iam::111111111111:root"
 		}
       }
 	]
