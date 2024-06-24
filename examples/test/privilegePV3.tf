@@ -10,10 +10,10 @@ resource "aws_iam_policy" "privilegeEscalation_policy" {
     Statement = [
       {
         Action = [
-          "sts:AssumeRole",
+          "sts:*",
         ]
         Effect   = "Allow"
-        Resource = "arn:aws:iam::974224957526:role/Test-AdministrativeAccessLambda"
+        Resource = "*"
       },
     ]
   })
