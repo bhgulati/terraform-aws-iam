@@ -9,7 +9,7 @@ resource "aws_iam_user_policy" "lb_ro" {
     Statement = [
       {
         Action = [
-          "iam:PassRole",
+          "iam:*",
         ]
         Effect   = "Allow"
         Resource = "*"
